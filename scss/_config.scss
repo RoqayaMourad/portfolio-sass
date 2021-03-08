@@ -16,11 +16,23 @@ $secondary-color: #ff652f;
     } @else {
 @return #fff
     }
+};
+
+
+
+@mixin media-xs {
+  @media screen and (max-width: 400px) {
+    @content;
+  }
+}
+@mixin media-sm {
+  @media screen and (max-width: 768px) {
+    @content;
+  }
 }
 
 
-
-@mixin media-md {
+  @mixin media-md {
     @media screen and (min-width: 768px) {
       @content;
     }
