@@ -2,7 +2,10 @@
 
 @include media-xs {
   .about__bio-image {
-    height: 100vh;
+    height:75vh;
+    p {
+      font-size: 1rem;
+    }
   }
 }
 
@@ -14,8 +17,12 @@
     font-size: 3rem;
 }
 .about__bio-image {
-  height: 80vh;
+  height:60vh;
+  p {
+    font-size: 1.2rem;
+  }
 }
+ 
 }
 
 @include media-md {
