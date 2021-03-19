@@ -191,6 +191,13 @@
           transition-delay: 0.55s;
 }
 
+.sticky {
+  position: fixed !important;
+  top: 0 !important;
+  width: 100% !important;
+  background-color: #000;
+}
+
 .about {
   padding-bottom: 2rem;
 }
@@ -432,10 +439,10 @@
 
 @media screen and (max-width: 400px) {
   .about__bio-image {
-    height: 75vh !important;
+    height: 75vh;
   }
   .about__bio-image p {
-    font-size: 1rem !important;
+    font-size: 1rem;
   }
 }
 

@@ -25,3 +25,20 @@ function toggleMenu() {
     showMenu = false;
   }
 }
+
+$(document).ready(function(){
+  $(window).scroll(function(){
+  	var scroll = $(window).scrollTop();
+	  if (scroll > 150) {
+	    $(".nav").css("background" , "rgb(39 39 39 / 86%)");
+	    $(" .menu-nav__link").css("font-size" , "1.2rem");
+	    $(".menu-nav__link").css("padding" , "1.5rem 0");
+	  }
+
+	  else{
+      $(".nav").css("background" , "transparent");
+	    $(" .menu-nav__link").css("font-size" , "1.5rem");
+	    $(".menu-nav__link").css("padding" , "2rem 0");	
+	  }
+  })
+})
