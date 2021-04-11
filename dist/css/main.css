@@ -203,7 +203,7 @@
 }
 
 .about__bio-image {
-  height: 50vh;
+  height: 60vh;
   width: 100%;
   background: -webkit-gradient(linear, left top, right top, from(rgba(39, 39, 39, 0.9)), to(rgba(39, 39, 39, 0.3))), url("../img/model.jpg") center top;
   background: linear-gradient(to right, rgba(39, 39, 39, 0.9), rgba(39, 39, 39, 0.3)), url("../img/model.jpg") center top;
@@ -453,17 +453,27 @@
   .contact h2 {
     font-size: 3rem;
   }
+  .about__bio {
+    width: 70%;
+  }
   .about__bio-image {
-    height: 60vh;
+    height: 90vh;
   }
   .about__bio-image p {
-    font-size: 1.2rem;
+    font-size: 1.12rem;
+    line-height: 1;
   }
 }
 
 @media screen and (min-width: 768px) {
   .menu-btn {
     visibility: hidden;
+  }
+  .about__bio-image {
+    height: 60vh;
+  }
+  .about__bio-image p {
+    line-height: 1.2;
   }
   .nav {
     visibility: visible;
